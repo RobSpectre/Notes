@@ -86,13 +86,13 @@ pprint.pprint(hashmap)
         - Logical extension of list comprehensions and generators to unify the language
 
         ```python
-	sum(x**3 for x in xrange(10000))
+        sum(x**3 for x in xrange(10000))
 
-	{os.path.splittext(filename)[1]
-	    for filename in os.listdir('.')}
+        {os.path.splittext(filename)[1]
+            for filename in os.listdir('.')}
 
-	{filename: os.path.getsize(filename)
-	    for filename in os.listdir('.'}
+        {filename: os.path.getsize(filename)
+            for filename in os.listdir('.'}
 	```
 
     - Generators that accept inputs
@@ -104,12 +104,12 @@ pprint.pprint(hashmap)
         ```python
         @inline_deferred
         def session(request, cleared=False):
-	    while not cleared:
-		cleared = yield authenticate(request.users)
-	    db_result = yield database_query(request.query)
-	    html = yield format_data(db_result)
-	    yield post_result(html)
-	    return end_session() 
+            while not cleared:
+                cleared = yield authenticate(request.users)
+                db_result = yield database_query(request.query)
+                html = yield format_data(db_result)
+                yield post_result(html)
+            return end_session() 
         ```
 
 	- Yield is _awesome_
@@ -145,10 +145,10 @@ pprint.pprint(hashmap)
         - Few languages currently have a counterpart to the with-statement
 	- It allows us to change the middle of code without affecting setup and teardown
 
-        ```python
-	with locking:
-	    access_resource()
-        ```
+    ```python
+    with locking:
+        access_resource()
+    ```
 
      - Abstract base classes
         - Uniform definition of what it means to be a sequence, mapping, etc
@@ -156,17 +156,17 @@ pprint.pprint(hashmap)
         - Mix-in capability
 
         ```python
-	class ListBasedSet(collections.Set):
-	    def __init__(self, iterable):
-	        self.elements = 1st = []
-	        for value in iterable:
-	            if value not in 1st:
+        class ListBasedSet(collections.Set):
+            def __init__(self, iterable):
+                self.elements = 1st = []
+                for value in iterable:
+                    if value not in 1st:
                         1st.append(value)
-	    def __iter__(self):
-	        return iter(self.elements)
-	    def __contains__(self, value):
-		return contains(value)
-	```
+            def __iter__(self):
+                return iter(self.elements)
+            def __contains__(self, value):
+                return contains(value)
+        ```
 
 	- Above is incomplete
 
