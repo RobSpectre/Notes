@@ -18,6 +18,7 @@ Epic Hotel -  Miami, Florida
 * [Embracing the GIL - David Beazley](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/embracing_the_global_interpreter_lock-david_beazley.md)
 * [What Makes Python AWESOME? - Raymond Hettinger](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/what_makes_python_awesome-raymond_hettinger.md)
 * [Backbone.js and Django - Leah Culver](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/backbone_and_django-leah_culver.md)
+* [PyPy Is Your Past, Present and Future - Alex Gaynor](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/pypy_is_your_past_present_and_future-alex_gaynor.md)
 
 
 ### Credits, License
