@@ -19,6 +19,7 @@ Epic Hotel -  Miami, Florida
 * [What Makes Python AWESOME? - Raymond Hettinger](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/what_makes_python_awesome-raymond_hettinger.md)
 * [Backbone.js and Django - Leah Culver](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/backbone_and_django-leah_culver.md)
 * [PyPy Is Your Past, Present and Future - Alex Gaynor](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/pypy_is_your_past_present_and_future-alex_gaynor.md)
+* [Processing Firefox Crash Reports with Python - Laura Thomson](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/processing_firefox_crash_reports_with_python-laura_thomson.md)
 
 
 ### Credits, License
