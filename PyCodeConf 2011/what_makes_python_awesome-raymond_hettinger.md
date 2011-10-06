@@ -47,6 +47,7 @@ for path, dirs, files in os.walk(''):
         filelist.append(fullname)
 pprint.pprint(hashmap)
 ```
+
     - This was written in five minutes
     - Novices can grasp it instantly
     - How long does this take to do in C++ (the answer is: infinite)
