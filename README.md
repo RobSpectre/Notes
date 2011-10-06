@@ -21,6 +21,7 @@ Epic Hotel -  Miami, Florida
 * [PyPy Is Your Past, Present and Future - Alex Gaynor](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/pypy_is_your_past_present_and_future-alex_gaynor.md)
 * [Processing Firefox Crash Reports with Python - Laura Thomson](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/processing_firefox_crash_reports_with_python-laura_thomson.md)
 * [The Future of Collaboration in the Python Community - Daniel Greenfield](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/the_future_of_collaboration_in_python-daniel_greenfield.md)
+* [Packaging and Dependency Management](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/packaging_and_dependency_management-craig_kerstiens.md)
 
 
 ### Credits, License
