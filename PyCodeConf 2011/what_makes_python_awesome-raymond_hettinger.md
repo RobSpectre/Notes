@@ -74,26 +74,26 @@ pprint.pprint(hashmap)
         - Simple syntax, only adds the _yield_ keyword
         - Remembers state between invocations - the stack including open loops and try-statements, execution point, and local variables
 
-	```python
-	def pager(lines, pagelen=60):
-            for lineno, line in enumerate(lines):
-	        yield line
-	        if lineno % pagelen == 0:
-		yield FORMFEED
-	```
+	    ```python
+            def pager(lines, pagelen=60):
+                for lineno, line in enumerate(lines):
+                    yield line
+                    if lineno % pagelen == 0:
+                        yield FORMFEED
+            ```
 
     - Generator Expressions
         - Logical extension of list comprehensions and generators to unify the language
 
-        ```python
-        sum(x**3 for x in xrange(10000))
+            ```python
+            sum(x**3 for x in xrange(10000))
 
-        {os.path.splittext(filename)[1]
-            for filename in os.listdir('.')}
+            {os.path.splittext(filename)[1]
+                for filename in os.listdir('.')}
 
-        {filename: os.path.getsize(filename)
-            for filename in os.listdir('.'}
-	```
+            {filename: os.path.getsize(filename)
+                for filename in os.listdir('.')}
+            ```
 
     - Generators that accept inputs
         - Generators support send(), throw() and close()
@@ -101,16 +101,16 @@ pprint.pprint(hashmap)
         - Makes it possible to implement Twisted's inline deferreds
         - It would be nice to write 
 
-        ```python
-        @inline_deferred
-        def session(request, cleared=False):
-            while not cleared:
-                cleared = yield authenticate(request.users)
-                db_result = yield database_query(request.query)
-                html = yield format_data(db_result)
-                yield post_result(html)
-            return end_session() 
-        ```
+            ```python
+            @inline_deferred
+            def session(request, cleared=False):
+                while not cleared:
+                    cleared = yield authenticate(request.users)
+                    db_result = yield database_query(request.query)
+                    html = yield format_data(db_result)
+                    yield post_result(html)
+                return end_session() 
+            ```
 
 	- Yield is _awesome_
     - Decorators
@@ -119,24 +119,24 @@ pprint.pprint(hashmap)
 	- Works for functions, methods and classes
 	- Functions have always been first class citizens
 
-	```python
-	from itty import get, post, run_itty
-	import os, subprocess
+            ```python
+            from itty import get, post, run_itty
+	    import os, subprocess
 
-	@get('/env/(?P<name>\w+)')
-	def lookup_environ_variable(request, name):
-	    return os.environ[name]
+	    @get('/env/(?P<name>\w+)')
+            def lookup_environ_variable(request, name):
+	        return os.environ[name]
 
-	@get('/freespace')
-	def compute_free_disk_space(request):
-	    return subprocess.check_output('df')
+            @get('/freespace')
+	    def compute_free_disk_space(request):
+	        return subprocess.check_output('df')
 
-	@post('/restart')
-	def test_post(request):
-	    os.system('restart')
+	    @post('/restart')
+	    def test_post(request):
+	        os.system('restart')
 
-	run_itty()
-	```
+	    run_itty()
+	    ```
 
     - With statement
         - Clean, elegant resource management
@@ -145,28 +145,28 @@ pprint.pprint(hashmap)
         - Few languages currently have a counterpart to the with-statement
 	- It allows us to change the middle of code without affecting setup and teardown
 
-    ```python
-    with locking:
-        access_resource()
-    ```
+        ```python
+        with locking:
+            access_resource()
+        ```
 
      - Abstract base classes
         - Uniform definition of what it means to be a sequence, mapping, etc
         - Ability to override isinstance() and issubclass()
         - Mix-in capability
 
-        ```python
-        class ListBasedSet(collections.Set):
-            def __init__(self, iterable):
-                self.elements = 1st = []
-                for value in iterable:
-                    if value not in 1st:
-                        1st.append(value)
-            def __iter__(self):
-                return iter(self.elements)
-            def __contains__(self, value):
-                return contains(value)
-        ```
+            ```python
+            class ListBasedSet(collections.Set):
+                def __init__(self, iterable):
+                    self.elements = 1st = []
+                    for value in iterable:
+                        if value not in 1st:
+                            1st.append(value)
+                def __iter__(self):
+                    return iter(self.elements)
+                def __contains__(self, value):
+                    return contains(value)
+            ```
 
 	- Above is incomplete
 
