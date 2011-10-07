@@ -26,6 +26,7 @@ Epic Hotel -  Miami, Florida
 * [Python Is Only Slow If You Are Using It Wrong - Avery Pennarun](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/python_is_only_slow_if_you_use_it_wrong-avery_pennarun.md)
 * [Amazing Things in Open Source - Audrey Roy](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/amazing_things_in_open_source-audrey_roy.md)
 * [Prejudging of Programming Languages - Gary Bernhardt](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/prejudging_of_programming_languages-gary_bernhardt.md)
+* [Cherry-Picking for Great Success - Armin Ronancher](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/cherry-picking_for_great_success-armin_ronancher.md)
 
 
 ### Credits, License
