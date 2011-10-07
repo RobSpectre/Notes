@@ -30,23 +30,23 @@ Outline
     - Batteries Included
     - Protocols - wsgi, dbapi, etc.
         - If you've learned file opening and closing once, you've learned it forever
-- A bit of awesomeness
+        - A bit of awesomeness
 
-```python
-# Search directory tree for all duplicate files
+            ```python
+            # Search directory tree for all duplicate files
 
-hashmap = {}
+            hashmap = {}
 
-for path, dirs, files in os.walk(''):
-    for filename in files:
-        fullname = os.path.join(path, filename)
-        with open(fullname) as f:
-            d= f.read()
-        h = hashlib.md5(d).hexdigest()
-        filelist = hashmap.setdefault(h, [])
-        filelist.append(fullname)
-pprint.pprint(hashmap)
-```
+            for path, dirs, files in os.walk(''):
+                for filename in files:
+                fullname = os.path.join(path, filename)
+                with open(fullname) as f:
+                    d= f.read()
+                h = hashlib.md5(d).hexdigest()
+                filelist = hashmap.setdefault(h, [])
+                filelist.append(fullname)
+            pprint.pprint(hashmap)
+            ```
 
     - This was written in five minutes
     - Novices can grasp it instantly
@@ -87,10 +87,10 @@ pprint.pprint(hashmap)
 
             ```python
             sum(x**3 for x in xrange(10000))
-
+            
             {os.path.splittext(filename)[1]
                 for filename in os.listdir('.')}
-
+            
             {filename: os.path.getsize(filename)
                 for filename in os.listdir('.')}
             ```
@@ -122,19 +122,19 @@ pprint.pprint(hashmap)
             ```python
             from itty import get, post, run_itty
 	    import os, subprocess
-
+            
 	    @get('/env/(?P<name>\w+)')
             def lookup_environ_variable(request, name):
 	        return os.environ[name]
-
+            
             @get('/freespace')
 	    def compute_free_disk_space(request):
 	        return subprocess.check_output('df')
-
+            
 	    @post('/restart')
 	    def test_post(request):
 	        os.system('restart')
-
+            
 	    run_itty()
 	    ```
 
