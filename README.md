@@ -22,6 +22,7 @@ Epic Hotel -  Miami, Florida
 * [Processing Firefox Crash Reports with Python - Laura Thomson](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/processing_firefox_crash_reports_with_python-laura_thomson.md)
 * [The Future of Collaboration in the Python Community - Daniel Greenfield](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/the_future_of_collaboration_in_python-daniel_greenfield.md)
 * [Packaging and Dependency Management - Craig Kerstiens](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/packaging_and_dependency_management-craig_kerstiens.md)
+* [API Design and Pragmatic Python - Kenneth Rietz](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/api_design_and_pragmatic_python-kenneth_reitz.md)
 
 
 ### Credits, License
