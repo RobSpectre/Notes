@@ -76,11 +76,12 @@ Outline
 
 	    ```python
             def pager(lines, pagelen=60):
-                for lineno, line in enumerate(lines):
+                    for lineno, line in enumerate(lines):
                     yield line
                     if lineno % pagelen == 0:
                         yield FORMFEED
             ```
+
 
     - Generator Expressions
         - Logical extension of list comprehensions and generators to unify the language
@@ -136,7 +137,9 @@ Outline
                 os.system('restart')
             
             run_itty()
+
 	    ```
+
 
     - With statement
         - Clean, elegant resource management

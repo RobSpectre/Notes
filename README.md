@@ -24,6 +24,7 @@ Epic Hotel -  Miami, Florida
 * [Packaging and Dependency Management - Craig Kerstiens](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/packaging_and_dependency_management-craig_kerstiens.md)
 * [API Design and Pragmatic Python - Kenneth Rietz](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/api_design_and_pragmatic_python-kenneth_reitz.md)
 * [Python Is Only Slow If You Are Using It Wrong - Avery Pennarun](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/python_is_only_slow_if_you_use_it_wrong-avery_pennarun.md)
+* [Amazing Things in Open Source - Audrey Roy](https://github.com/RobSpectre/Notes/blob/master/PyCodeConf%202011/amazing_things_in_open_source-audrey_roy.md)
 
 
 ### Credits, License
