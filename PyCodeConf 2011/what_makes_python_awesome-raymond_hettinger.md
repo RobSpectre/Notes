@@ -118,24 +118,24 @@ Outline
 	- Easy on the eyes
 	- Works for functions, methods and classes
 	- Functions have always been first class citizens
-
+            
             ```python
             from itty import get, post, run_itty
-	    import os, subprocess
+            import os, subprocess
             
-	    @get('/env/(?P<name>\w+)')
+            @get('/env/(?P<name>\w+)')
             def lookup_environ_variable(request, name):
-	        return os.environ[name]
+                return os.environ[name]
             
             @get('/freespace')
-	    def compute_free_disk_space(request):
-	        return subprocess.check_output('df')
+            def compute_free_disk_space(request):
+                return subprocess.check_output('df')
             
-	    @post('/restart')
-	    def test_post(request):
-	        os.system('restart')
+            @post('/restart')
+            def test_post(request):
+                os.system('restart')
             
-	    run_itty()
+            run_itty()
 	    ```
 
     - With statement
