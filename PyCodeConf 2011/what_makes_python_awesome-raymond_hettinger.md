@@ -74,15 +74,14 @@ Outline
         - Simple syntax, only adds the _yield_ keyword
         - Remembers state between invocations - the stack including open loops and try-statements, execution point, and local variables
 
-	    ```python
+        ```python
             def pager(lines, pagelen=60):
                     for lineno, line in enumerate(lines):
                     yield line
                     if lineno % pagelen == 0:
                         yield FORMFEED
-            ```
-
-
+        ```
+	
     - Generator Expressions
         - Logical extension of list comprehensions and generators to unify the language
 
@@ -138,8 +137,7 @@ Outline
             
             run_itty()
 
-	    ```
-
+            ```
 
     - With statement
         - Clean, elegant resource management
